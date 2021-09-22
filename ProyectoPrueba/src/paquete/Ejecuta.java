@@ -1,3 +1,4 @@
+//PROGRAMA DE LAURA RODR√çGUEZ VAQUERO.
 package paquete;
 
 import java.util.Scanner;
@@ -6,10 +7,10 @@ public class Ejecuta {
 
 	public static void main(String[] args) {
 		/*
-		11. Programa que lee nombre y aÒo de nacimiento de una serie de alumnos hasta introducir
-		como nombre de alumno ìfinî. En ese momento mostrar· la edad media de los alumnos y
-		el nombre del alumno menor. NOTA: Al introducir como nombre ìfinî, no nos ha de pedir el
-		aÒo de nacimiento. 
+		11. Programa que lee nombre y a√±o de nacimiento de una serie de alumnos hasta introducir
+		como nombre de alumno ‚Äúfin‚Äù. En ese momento mostrar√° la edad media de los alumnos y
+		el nombre del alumno menor. NOTA: Al introducir como nombre ‚Äúfin‚Äù, no nos ha de pedir el
+		a√±o de nacimiento. 
 		*/
 		
 		int nacim;
@@ -32,12 +33,12 @@ public class Ejecuta {
 				continuar = false;
 			} else {
 				contAlumnos++;
-				System.out.print("Dime tu aÒo de nacimiento: ");
+				System.out.print("Dime tu a√±o de nacimiento: ");
 				nacim = Integer.valueOf(sc.nextLine()); //// Scanner no funciona bien cuando se utiliza para leer datos 
 				// de distinto tipo. Para solucionar este inconveniente debemos 
-				// leer todos los datos con texto con el mÈtodo nextLine() y 
-				// si es necesario convertir a n˙mero con Integer.parseInt( variable a convertir )
-				//No funciona bien si se mezcla n˙mero y texto. Ahora lo ha hecho con valueOf
+				// leer todos los datos con texto con el m√©todo nextLine() y 
+				// si es necesario convertir a n√∫mero con Integer.parseInt( variable a convertir )
+				//No funciona bien si se mezcla n√∫mero y texto. Ahora lo ha hecho con valueOf
 				edad = 2021 - nacim;
 				suma = suma + edad; //suma += edad;
 				
@@ -66,7 +67,7 @@ System.out.print("Dime tu nombre: ");
 nombre = sc.nextLine();
 
 while(nombre.equals("fin") == false){
-		System.out.print("Dime tu aÒo de nacimiento: ");
+		System.out.print("Dime tu a√±o de nacimiento: ");
 		nacim = Integer.valueOf(sc.nextLine());
 		
 		edad = anioActual - nacim;
