@@ -60,3 +60,29 @@ public class Ejecuta {
 	}
 
 }
+
+/*OTRA FORMA DE HACER. SIN BOOLEANOS.
+System.out.print("Dime tu nombre: ");
+nombre = sc.nextLine();
+
+while(nombre.equals("fin") == false){
+		System.out.print("Dime tu año de nacimiento: ");
+		nacim = Integer.valueOf(sc.nextLine());
+		
+		edad = anioActual - nacim;
+		
+		contEdad++;
+		
+		suma += edad;
+		
+		if(edad < menor){
+			menor = edad;
+			nombreMenor = nombre;
+		}
+		
+		System.out.print("Dime tu nombre: ");
+		nombre = sc.nextLine();
+}*/
+		
+
+
