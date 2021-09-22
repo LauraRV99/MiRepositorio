@@ -1,4 +1,4 @@
-//PROGRAMA DE LAURA RODRÍGUEZ VAQUERO.
+//PROGRAMA DE LAURA RODRÃ�GUEZ VAQUERO.
 package paquete;
 
 import java.util.Scanner;
@@ -7,13 +7,13 @@ public class Ejecuta {
 
 	public static void main(String[] args) {
 		/*
-		11. Programa que lee nombre y año de nacimiento de una serie de alumnos hasta introducir
-		como nombre de alumno “fin”. En ese momento mostrará la edad media de los alumnos y
-		el nombre del alumno menor. NOTA: Al introducir como nombre “fin”, no nos ha de pedir el
-		año de nacimiento. 
+		11. Programa que lee nombre y aÃ±o de nacimiento de una serie de alumnos hasta introducir
+		como nombre de alumno â€œfinâ€�. En ese momento mostrarÃ¡ la edad media de los alumnos y
+		el nombre del alumno menor. NOTA: Al introducir como nombre â€œfinâ€�, no nos ha de pedir el
+		aÃ±o de nacimiento. 
 		*/
 		
-		int nacim;
+		int nacim; //Año nacimiento.
 		String nombre;
 		int edad;
 		float EMedia;
@@ -33,12 +33,12 @@ public class Ejecuta {
 				continuar = false;
 			} else {
 				contAlumnos++;
-				System.out.print("Dime tu año de nacimiento: ");
+				System.out.print("Dime tu aÃ±o de nacimiento: ");
 				nacim = Integer.valueOf(sc.nextLine()); //// Scanner no funciona bien cuando se utiliza para leer datos 
 				// de distinto tipo. Para solucionar este inconveniente debemos 
-				// leer todos los datos con texto con el método nextLine() y 
-				// si es necesario convertir a número con Integer.parseInt( variable a convertir )
-				//No funciona bien si se mezcla número y texto. Ahora lo ha hecho con valueOf
+				// leer todos los datos con texto con el mÃ©todo nextLine() y 
+				// si es necesario convertir a nÃºmero con Integer.parseInt( variable a convertir )
+				//No funciona bien si se mezcla nÃºmero y texto. Ahora lo ha hecho con valueOf
 				edad = 2021 - nacim;
 				suma = suma + edad; //suma += edad;
 				
@@ -59,6 +59,8 @@ public class Ejecuta {
 
 
 	}
+	
+	//FIN DEL PROGRAMA.
 
 }
 
@@ -67,7 +69,7 @@ System.out.print("Dime tu nombre: ");
 nombre = sc.nextLine();
 
 while(nombre.equals("fin") == false){
-		System.out.print("Dime tu año de nacimiento: ");
+		System.out.print("Dime tu aÃ±o de nacimiento: ");
 		nacim = Integer.valueOf(sc.nextLine());
 		
 		edad = anioActual - nacim;
