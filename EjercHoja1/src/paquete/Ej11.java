@@ -1,5 +1,6 @@
 package paquete;
 
+//import java.util.Calendar;
 import java.util.Scanner;
 
 public class Ej11 {
@@ -22,7 +23,7 @@ public class Ej11 {
 		int menor = Integer.MAX_VALUE;
 		boolean continuar = true;
 		Scanner sc = new Scanner(System.in);
-		
+		//int anioActual = Calendar.getInstance().get(Calendar.YEAR);
 		do {
 			System.out.print("Dime tu nombre: ");
 			nombre = sc.nextLine();
@@ -32,9 +33,17 @@ public class Ej11 {
 			} else {
 				contAlumnos++;
 				System.out.print("Dime tu año de nacimiento: ");
-				nacim = Integer.parseInt(sc.nextLine()); //¿Qué es esto?
+				//anioActual = calendario.YEAR;
+				nacim = Integer.valueOf(sc.nextLine()); 
+				
+				
+				//Scanner no funciona bien cuando se utiliza para leer datos 
+				// de distinto tipo. Para solucionar este inconveniente debemos 
+				// leer todos los datos con texto con el método nextLine() y 
+				// si es necesario convertir a número con Integer.parseInt( variable a convertir )
+				//No funciona bien si se mezcla número y texto. Ahora lo ha hecho con valueOf
 				edad = 2021 - nacim;
-				suma = suma + edad;
+				suma = suma + edad; //suma += edad;
 				
 				if(edad < menor) {
 					menor = edad;
@@ -42,7 +51,7 @@ public class Ej11 {
 				}
 			}
 			
-		} while(continuar);
+		} while(continuar); /*También se puede poner (!nombre.equals("fin))*/
 		
 		sc.close();
 		
